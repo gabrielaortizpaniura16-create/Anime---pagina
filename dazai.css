@@ -1,0 +1,786 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 64px;
+    background: #232323;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+.logo {
+    color: #f47521;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 45px;
+}
+
+.logo span {
+    font-size: 24px;
+}
+
+
+.enlaces {
+    display: flex;
+    gap: 32px;
+}
+
+
+.enlaces a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.enlaces a:hover {
+    color: #f47521;
+}
+
+
+.iconos {
+    margin-left: auto;
+
+    display: flex;
+    gap: 25px;
+
+    font-size: 20px;
+}
+
+
+
+.navbar {
+    height: 64px;
+    background: #232323;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: #f47521;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+.logo span {
+    font-size: 24px;
+}
+
+.enlaces {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.enlaces a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.enlaces a:hover {
+    color: #f47521;
+}
+
+.iconos {
+    margin-left: auto;
+
+    display: flex;
+    gap: 20px;
+
+    font-size: 20px;
+}
+
+
+
+/* ================= PORTADA ================= */
+
+.anime-portada {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+}
+
+
+.fondo {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.95),
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.85)
+        ),
+        linear-gradient(
+            to top,
+            #000 2%,
+            transparent 60%
+        ),
+        url("./189995678026381835.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    filter: blur(1px);
+
+    transform: scale(1.05);
+
+    opacity: 0.8;
+}
+
+
+.informacion {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 55px 80px;
+
+    max-width: 900px;
+}
+
+
+/* ================= DATOS ================= */
+
+.datos {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    color: #ddd;
+
+    font-size: 14px;
+}
+
+
+.edad {
+
+    background: #444;
+
+    padding: 4px 8px;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+
+/* ================= VALORACIÓN ================= */
+
+.valoracion {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+
+.estrellas {
+
+    color: white;
+
+    font-size: 25px;
+
+    letter-spacing: 2px;
+}
+
+
+.valoracion strong {
+
+    color: white;
+
+    font-size: 17px;
+}
+
+
+/* ================= TÍTULO ================= */
+
+.informacion h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= BOTONES ================= */
+
+.botones {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+.btn-ver {
+
+    background: #ff6600;
+
+    color: #000;
+
+    border: none;
+
+    padding: 14px 24px;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.btn-ver:hover {
+
+    background: #ff7b22;
+}
+
+
+.btn-icono {
+
+    width: 48px;
+
+    height: 48px;
+
+    background: transparent;
+
+    border: 2px solid #ff6600;
+
+    color: #ff6600;
+
+    font-size: 21px;
+
+    cursor: pointer;
+}
+
+
+.btn-icono:hover {
+
+    background: #ff6600;
+
+    color: #000;
+}
+
+
+/* ================= DESCRIPCIÓN ================= */
+
+.descripcion {
+
+    max-width: 750px;
+
+    line-height: 1.6;
+
+    font-size: 16px;
+
+    color: #ddd;
+}
+
+
+/* ================= INFORMACIÓN EXTRA ================= */
+
+.informacion-extra {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 25px 80px 35px;
+
+    background: #000;
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+.informacion-extra strong {
+
+    color: white;
+}
+
+
+/* ================= MÁS DETALLES ================= */
+
+.detalles {
+
+    padding: 20px 80px;
+}
+
+
+.detalles h2 {
+
+    color: #ff6600;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+.linea {
+
+    height: 2px;
+
+    background: #292929;
+
+    width: 100%;
+}
+
+
+/* ================= PREMIUM ================= */
+
+.premium-banner {
+
+    max-width: 1100px;
+
+    margin: 55px auto;
+
+    min-height: 105px;
+
+    padding: 20px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #087a78,
+            #063f40,
+            #062727
+        );
+
+    border-radius: 2px;
+}
+
+
+.corona {
+
+    font-size: 60px;
+}
+
+
+.premium-texto {
+
+    flex: 1;
+}
+
+
+.premium-texto h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.premium-texto p {
+
+    font-size: 14px;
+
+    color: #ddd;
+}
+
+
+.premium-banner button {
+
+    background: #ffb400;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.premium-banner button:hover {
+
+    background: #ffc933;
+}
+
+
+/* ================= EPISODIOS ================= */
+
+.episodios {
+
+    padding: 20px 80px 70px;
+}
+
+
+.titulo-episodios {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.titulo-episodios h2 {
+
+    font-size: 18px;
+}
+
+
+.titulo-episodios div {
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+
+/* ================= GRID ================= */
+
+.episodios-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= TARJETA ================= */
+
+.episodio {
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+
+.episodio:hover {
+
+    transform: scale(1.03);
+}
+
+
+.episodio img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.episodio h3 {
+
+    font-size: 15px;
+
+    margin-top: 10px;
+}
+
+
+.episodio p {
+
+    color: #999;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .enlaces {
+        display: none;
+    }
+
+    .informacion {
+        padding: 40px 30px;
+    }
+
+    .informacion-extra {
+        padding: 25px 30px;
+        flex-direction: column;
+    }
+
+    .detalles {
+        padding: 20px 30px;
+    }
+
+    .episodios {
+        padding: 20px 30px;
+    }
+
+    .episodios-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .premium-banner {
+        margin: 40px 30px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .iconos {
+        gap: 10px;
+    }
+
+    .informacion h1 {
+        font-size: 35px;
+    }
+
+    .premium-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .episodios-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ================= CATEGORÍAS ================= */
+
+.categoria-menu {
+    position: relative;
+}
+
+.categoria-btn {
+    background: none;
+    border: none;
+    color: #ddd;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.categoria-btn span {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.categoria-btn:hover {
+    color: #f47521;
+}
+
+
+/* MENÚ DE GÉNEROS */
+
+.generos {
+    display: none;
+
+    position: absolute;
+    top: 35px;
+    left: -15px;
+
+    width: 190px;
+
+    background: #242424;
+
+    padding: 10px 0;
+
+    border-radius: 4px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+
+    z-index: 100;
+}
+
+
+/* CUANDO SE ABRE */
+
+.generos.mostrar {
+    display: block;
+}
+
+
+.generos a {
+    display: block;
+
+    padding: 11px 18px;
+
+    color: #ddd;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.generos a:hover {
+    background: #333;
+    color: #f47521;
+}
+
+
+
+
+
+
+
+
+/* ================= BARRA DE BÚSQUEDA ================= */
+
+.lupa {
+    cursor: pointer;
+}
+
+/* Barra larga */
+
+.barra-busqueda {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+    max-width: 1000px;
+
+    height: 55px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #444;
+
+    border-radius: 8px;
+
+    display: none;
+
+    align-items: center;
+
+    padding: 0 18px;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+.barra-busqueda.mostrar {
+    display: flex;
+}
+
+/* Icono de lupa */
+
+.barra-busqueda span {
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+/* Input */
+
+.barra-busqueda input {
+    flex: 1;
+
+    height: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    outline: none;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+.barra-busqueda input::placeholder {
+    color: #aaa;
+}
+
+/* Botón cerrar */
+
+.barra-busqueda button {
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.barra-busqueda button:hover {
+    color: #f47521;
+}
